@@ -25,5 +25,17 @@ class Funcionario {
     public void setDept(Departamento d){
         dept = d;
     }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String toString(){
+        return getNome() + " " + getMat() + " "+ getDept().toString();
+    }
     
 }
