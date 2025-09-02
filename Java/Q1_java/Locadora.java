@@ -1,22 +1,26 @@
 package Q1_java;
 
+import java.util.ArrayList;
+
 public class Locadora {
     
     private String nome;
 
-    private String filmes [] ;
+    private ArrayList<Filmes> filmes ;
 
-    public Locadora(String nome, String filmes []){
-        this.filmes = filmes;
+    public Locadora(String nome){
+        this.filmes = new ArrayList<>();
         this.nome = nome;
     }
 
 
     public void adicionar_filmes( Filmes filmes){
-        
+        this.filmes.add(filmes);
     }
 
-    public void listarFilmes(){
-
+    public void listarFilmes( ){
+        for(int i = 0 ; i< filmes.size(); i ++){
+            System.out.print(filmes.get(i));
+        }
     }
 }
