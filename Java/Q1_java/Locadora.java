@@ -20,7 +20,7 @@ public class Locadora {
 
     public void listarFilmes( ){
         for(int i = 0 ; i< filmes.size(); i ++){
-            System.out.print(filmes.get(i));
+            System.out.println(filmes.get(i));
         }
     }
 }

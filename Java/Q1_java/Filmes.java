@@ -42,7 +42,7 @@ public class Filmes {
 
 
     public String toString(){
-        return titulo + " " + genero + " " + ano_lancamento;
+        return titulo + " Gênero:" + genero + " ano de lançamento:" + ano_lancamento;
     }
 
 }
