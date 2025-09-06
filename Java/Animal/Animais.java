@@ -2,10 +2,12 @@ package Animal;
 
 public class Animais {
    private String nome;
+   private String apelido;
 
 
-   public Animais(String nome){
+   public Animais(String nome, String apelido){
         this.nome = nome;
+        this.apelido = apelido;
    }
 
 
