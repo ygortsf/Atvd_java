@@ -1,4 +1,4 @@
-package ContaBancaria;
+package Heranca;
 
 public class ContaPoupanca {
     
