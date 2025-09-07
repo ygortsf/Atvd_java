@@ -3,6 +3,7 @@ package Animal;
 public class Animais {
    private String nome;
    private String apelido;
+   
 
 
    public Animais(String nome, String apelido){
