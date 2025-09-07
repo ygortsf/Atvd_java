@@ -70,7 +70,7 @@ public class Cliente {
     }
 
     public String toString(){
-        return "Cliente: " + name + "\n" + cpf + "\n" + numConta + "\n" + saldo;
+        return "Cliente: " + name + "\nCPF:" + cpf + "\nNumero de conta:" + numConta + "\nSaldo: R$" + saldo+",00";
     }
 
 

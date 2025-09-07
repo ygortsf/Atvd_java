@@ -8,7 +8,7 @@ public class Banco {
 
     public void cadastrarCliente(){
         clientes = new Cliente[2];
-        clientes[0] = new Cliente("caio", "134569060-10", 2609, 100);
+        clientes[0] = new Cliente("caio", "134569060-10", 2609, 200);
         clientes[1] = new Cliente("Ada love", "98765431", 12345);
     }
 
@@ -29,6 +29,24 @@ public class Banco {
     }
 
      public String operacoes() {
+
+
+        for (Cliente c : clientes) {
+            c.saque(100); 
+            c.depositar(50);
+        }
+
+        for (Cliente c : clientes) {
+            if (c.getSaldo() < 0) {
+                c.setSaldo(0);
+            }
+        }
+
+        clientes[1].setName("Ada Lovelace");
+
+        clientes[0].setCpf("12345689");
+
+
         StringBuilder resultado = new StringBuilder();
         for (int i = 0; i < 2; i++) {
             resultado.append(clientes[i].toString());
@@ -42,6 +60,7 @@ public class Banco {
         b1.cadastrarCliente();
         Cliente c1 = b1.getCliente(0);
         System.out.println(c1);
+        System.out.println(b1.operacoes());
     }
 
 
