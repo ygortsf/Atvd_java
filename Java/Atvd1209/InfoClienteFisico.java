@@ -6,4 +6,9 @@ public class InfoClienteFisico extends InfoCliente {
         super(info);
         this.cpf = cpf;
     }
+
+
+    @Override
+    public void exibirInfo(){
+    System.out.println();}
 }
